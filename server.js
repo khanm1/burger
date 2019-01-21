@@ -1,21 +1,29 @@
-// Global
-require("dotenv").config();
-const express = require("express");
-const bodyParser = require("body-parser");
-const exphbs = require("express-handlebars");
-const methodOverride = require('method-override');
-const routes = require("./controllers/burgers_controller");
-const app = express();
-const PORT = process.env.PORT || 8080;
-// Config Settings
-app.use(methodOverride('_method'));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+var express = require("express");
+var methodOverride = require("method-override");
+var bodyParser = require("body-parser");
+
+var port = 3000;
+
+var app = express();
+
+// serve static content for the app from the "public" directory in the application
+app.use(express.static(process.cwd() + "/public"));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// override with POST having ?_method=DELETE
+app.use(methodOverride("_method"));
+
+// set handlebars
+var exphbs = require("express-handlebars");
+
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine","handlebars");
+app.set("view engine", "handlebars");
+
+// import routes and give the server access to them
+var routes = require("./controllers/burgers-controllers.js");
+
 app.use("/", routes);
-app.use(express.static('public'));
-// Listener
-app.listen(PORT,function(){
-    console.log("App now listening at localhost:" + PORT);
-});
+
+app.listen(port);
+console.log("app listening on port " + port);
