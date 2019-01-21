@@ -1,51 +1,47 @@
-<h1>Eat-Da-Burger!</h1>
-
-<h2>Burgers I have yet to eat</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless this.eaten}}
-      <li>
-        {{this.name}}
-
-        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="eaten" value="false">
-          <button type="submit">EAT IT</button>
-        </form>
-
-        {{> burgers/delete-burger}}
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers I have eaten</h2>
-
-<ul>
-  {{#each  burgers}}
-    {{#if this.eaten}}
-      <li>
-        {{this.name}}
-
-        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="eaten" value="true">
-          <button type="submit">UN-EAT IT</button>
-        </form>
-
-        {{> burgers/delete-burger}}
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-update-form" action="burgers/create" method="POST">
-
-  <div class="form-group">
-    <label for="burger">Burger name</label>
-    <input type="text" id="burger" name="name">
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
-
+<div class="jumbotron header-bg"> 
+    {{!-- #fac126; --}}
+    <h1>Eat-Da-Burger</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2 class="header">Burgers to Devour</h2>
+            {{#each burgers}}
+                {{#unless this.devoured}}
+                    <form action="/burgers/update/{{this.id}}?_method=PUT" method="POST">
+                        <div class="form-group">
+                            <ul>
+                                <li>
+                                    <button type="submit" name="devoured" value="1" class="btn btn-mustard">{{burger_name}}</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-lg-4 text-center">
+            <img class="mb-3" src="assets/img/burger.png">
+            <form action="/burgers/create" method="POST">
+                <div class="form-group">
+                    <input type="text" name="burger_name" class="form-control text-center" maxlength="50" placeholder="Enter Burger Name">
+                    <button class="btn btn-ketchup btn-block my-2" type="submit">Add Burger</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4">
+            <h2 class="header">Burgers Devoured</h2>
+            {{#each burgers}}
+                {{#if this.devoured}}
+                    <div>
+                        <ul>
+                            <li>
+                                <button disabled class="btn btn-mustard">{{burger_name}}</button>
+                            </li>
+                        </ul>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
