@@ -1,0 +1,34 @@
+body { 
+    /* background-image: url('../image/burger1.jpg') ; */
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: yellow;  
+}
+
+.top-section, .lower-section{
+    text-align: center; 
+}
+
+
+#label {
+    color: black;
+    font-size: 16px;
+}
+
+#burger-photo{
+    margin-top: 10px;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+li {
+    padding: 4px;
+    font-size: 16px;
+}
+
+
