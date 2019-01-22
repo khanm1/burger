@@ -1,5 +1,6 @@
 // Global
 const orm = require("../config/orm.js");
+
 // Burger
 const burger = {
     select: function(cb){
