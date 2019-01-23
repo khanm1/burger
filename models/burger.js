@@ -1,9 +1,7 @@
 //Handles the variables for the DB in ORM (ALL, INSERT, UPDATE)
-
 var orm = require("../config/orm");
 
 var burger = {
-
     //***************************************************** */
     all: callback => {
         orm.selectAll("burgers", res => {
