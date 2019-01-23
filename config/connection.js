@@ -1,6 +1,5 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-
 var connection;
 
 //Links to the Heroku DB add on
