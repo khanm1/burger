@@ -1,12 +1,10 @@
 //ROUTER FILE - using the keywords from ORM (ALL, INSERT, and UPDATE)
-
 var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger");
 
 
 // Create all our routes and set up logic within those routes where required.
-
 
 //***************************************************** */
 // LOADS ALL the burgers FROM the DB to DOM
@@ -20,7 +18,6 @@ router.get("/", (req, res) => {
     })
 });
 
-
 //***************************************************** */
 // ADDS a burger to the DB
 router.post("/api/burgers", (req, res) => {
@@ -32,7 +29,6 @@ router.post("/api/burgers", (req, res) => {
         });
     });
 });
-
 
 //***************************************************** */
 //UPDATES 1 burger from list to devoured
