@@ -7,7 +7,7 @@ const connection = require("../config/connection.js");
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
 const printQuestionMarks = num => {
-  var arr = [];
+  let arr = [];
 
   for (var i = 0; i < num; i++) {
     arr.push("?");
@@ -18,11 +18,11 @@ const printQuestionMarks = num => {
 
 // Helper function to convert object key/value pairs to SQL syntax
 const objToSql = (ob) => {
-  var arr = [];
+  let arr = [];
 
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
-    var value = ob[key];
+    let value = ob[key];
 
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
