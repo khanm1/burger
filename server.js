@@ -1,4 +1,4 @@
-//Global Variable
+//Variable
 var express = require("express");
 var bodyParser = require("body-parser");
 
@@ -12,7 +12,7 @@ app.use(express.static("./public"));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// parse application/json !!!!!!!!!!!!!!!!!!!!!! delete maybe
+// parse application/json 
 app.use(bodyParser.json());
 
 // Set Handlebars.

@@ -1,5 +1,19 @@
 # Overview
 A Node, Express, Handlebars, and MySQL burger app that lets users input the names of burgers they'd like to eat... and then they get to devour them!
+
+## Technologies:
+### Frontend
+* HTML
+* CSS
+* Bootstrap
+* Javascript (jQuery)
+* Handlebars
+### Backend
+* Nodejs
+* Mysql
+* Express
+* jawsDB
+* Heroku
 ## Dependencies:
 * body-parser
 * dotenv
@@ -19,19 +33,5 @@ Using ORM, the app has 3 methods:
     * hits a route in Express to insert a new burger into the MySQL database
     * re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
 
-## Technologies:
-
-### Frontend
-* HTML
-* CSS
-* Bootstrap
-* Javascript (jQuery)
-* Handlebars
-### Backend
-* Nodejs
-* Mysql
-* Express
-* jawsDB
-* Heroku
 ### Link to App
 * <strong>[Burger](https://github.com/khanm1/burger)</strong>
