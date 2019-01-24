@@ -1,12 +1,12 @@
 // Import MySQL connection.
-var connection = require("../config/connection.js");
+const connection = require("../config/connection.js");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
 // In order to write the query, we need 3 question marks.
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
-var printQuestionMarks = num => {
+const printQuestionMarks = num => {
   var arr = [];
 
   for (var i = 0; i < num; i++) {
@@ -17,7 +17,7 @@ var printQuestionMarks = num => {
 }
 
 // Helper function to convert object key/value pairs to SQL syntax
-var objToSql = (ob) => {
+const objToSql = (ob) => {
   var arr = [];
 
   // loop through the keys and push the key/value as a string int arr
@@ -43,11 +43,11 @@ var objToSql = (ob) => {
 
 //Object-relational mapping
 //The query templates to with custom names
-var orm = {
+const orm = {
 
   //***************************************************** */
   selectAll: (tableInput, callback) => {
-    var queryString = "SELECT * FROM " + tableInput + ";";
+    const queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;
@@ -58,7 +58,7 @@ var orm = {
 
   //***************************************************** */
   insertOne: (table, cols, vals, callback) => {
-    var queryString = "INSERT INTO " + table;
+    const queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
@@ -81,7 +81,7 @@ var orm = {
 
   //***************************************************** */
   updateOne: (table, objColVals, condition, callback) => {
-    var queryString = "UPDATE " + table;
+    const queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);

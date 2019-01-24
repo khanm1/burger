@@ -1,6 +1,6 @@
 // Set up MySQL connection.
-var mysql = require("mysql");
-var connection;
+const mysql = require("mysql");
+const connection;
 
 //Links to the Heroku DB add on
 if (process.env.JAWSDB_URL) {
