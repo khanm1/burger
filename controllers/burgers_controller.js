@@ -1,8 +1,8 @@
 
 //ROUTER FILE - using the keywords from ORM (ALL, INSERT, and UPDATE)
-const express = require("express");
-const router = express.Router();
-const burger = require("../models/burger");
+var express = require("express");
+var router = express.Router();
+var burger = require("../models/burger");
 
 
 // Create all our routes and set up logic within those routes where required.
@@ -11,7 +11,7 @@ const burger = require("../models/burger");
 // LOADS ALL the burgers FROM the DB to DOM
 router.get("/", (req, res) => {
     burger.all(data => {
-        let hbsObject = {
+        var hbsObject = {
             burgers: data //burger is the database and data is what is inside the db
         };
         console.log(hbsObject);
@@ -34,7 +34,7 @@ router.post("/api/burgers", (req, res) => {
 //***************************************************** */
 //UPDATES one burger from list to devoured
 router.put("/api/burgers/:id", (req, res) => {
-    let condition = "id = " + req.params.id;
+    var condition = "id = " + req.params.id;
     console.log("condition", condition);
 
     burger.update({
