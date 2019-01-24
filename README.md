@@ -1,6 +1,6 @@
 # Overview
 A Node, Express, Handlebars, and MySQL burger app that lets users input the names of burgers they'd like to eat... and then they get to devour them!
-## Dependencies
+## Dependencies:
 * body-parser
 * dotenv
 * express
@@ -8,7 +8,7 @@ A Node, Express, Handlebars, and MySQL burger app that lets users input the name
 * method-override
 * mysql
 
-## Functionality
+## Functionality:
 Using ORM, the app has 3 methods:
 
 1. **GET** all entries from the MySQL database and display them to the DOM using Handlebars.
