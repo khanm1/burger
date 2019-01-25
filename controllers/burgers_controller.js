@@ -8,7 +8,7 @@ var burger = require("../models/burger");
 // Create all our routes and set up logic within those routes where required.
 
 //***************************************************** */
-// LOADS ALL the burgers FROM the DB to DOM
+// Get Burgers the FROM the DB to DOM
 router.get("/", (req, res) => {
     burger.all(data => {
         var hbsObject = {
@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 });
 
 //***************************************************** */
-// ADDS a burger to the DB
+// Create Burger to the DB
 router.post("/api/burgers", (req, res) => {
     burger.insert([
         "burger_name", "devoured"
@@ -32,7 +32,7 @@ router.post("/api/burgers", (req, res) => {
 });
 
 //***************************************************** */
-//UPDATES one burger from list to devoured
+// Update Burger from list to devoured
 router.put("/api/burgers/:id", (req, res) => {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
