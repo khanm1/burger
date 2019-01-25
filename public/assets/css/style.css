@@ -14,7 +14,7 @@ body {
 
 #label {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #burger-photo{
@@ -22,13 +22,13 @@ body {
 }
 
 body {
-    font-family: 'Arial';
+    font-family: 'Arial Black';
 }
 
 
 li {
     padding: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
