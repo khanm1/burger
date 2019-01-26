@@ -1,16 +1,20 @@
+
 USE burgers_db;
 
 INSERT INTO burgers(burger_name)
-VALUES('New England Patriot');
+VALUES('New England Patriot Burger');
 
 INSERT INTO burgers(burger_name)
-VALUES('Extra Spicy');
+VALUES('Extra Spicy Burger');
 
 INSERT INTO burgers(burger_name)
-VALUES('Love');
+VALUES('Love Burger');
 
 INSERT INTO burgers(burger_name)
-VALUES('Southern Burger');
+VALUES('Tom Brady Burger');
 
 INSERT INTO burgers(burger_name)
-VALUES('Veggie Burger');
+VALUES('Spicy Chicken Burger');
+
+
+
