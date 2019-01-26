@@ -12,7 +12,7 @@ var printQuestionMarks = num => {
   return arr.toString();
 }
 
-// Helper function to convert object key/value pairs to SQL syntax
+// Helper function to convert object key/value pairs to Sql syntax
 var objToSql = (ob) => {
   var arr = [];
 
@@ -23,12 +23,11 @@ var objToSql = (ob) => {
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
       
-      // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // if string with spaces, add quotations (Spicy Patriot Burger => 'Spicy Patriot Burger')
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {name: 'Spicy Patriot Burger'} => ["name='Spicy Patriot Burger'"]
       arr.push(key + "=" + value);
     }
   }
@@ -37,7 +36,7 @@ var objToSql = (ob) => {
   return arr.toString();
 }
 
-//Object-relational mapping
+//Object Relational Mapper (ORM)
 //The query templates to with custom names
 var orm = {
 
@@ -93,6 +92,6 @@ var orm = {
   }
 
 }
-// Export Orm
+// Export ORM
 module.exports = orm;
 
