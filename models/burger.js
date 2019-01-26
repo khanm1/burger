@@ -1,4 +1,4 @@
-//Handles the variables for the DB in ORM (ALL, INSERT, UPDATE)
+//Handles the variables for the DB in ORM (All, Insert, Update)
 var orm = require("../config/orm");
 
 var burger = {
