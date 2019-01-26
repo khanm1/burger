@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+//Create mysql connection and export to the database by the orm
 const mysql = require("mysql");
 var connection;
 
@@ -10,7 +10,7 @@ if (process.env.JAWSDB_URL) {
 		port: 3306,
 		host: "localhost",
 		user: "Mohammad",
-		password: "Rafika112575",
+		password: "Password",
 		database: "burgers_db"
 	});
 }
