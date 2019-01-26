@@ -30,7 +30,12 @@ body {
 body {
     font-family: 'Arial Black';
 }
-
+h2 {
+    color: blue;
+}
+h4 {
+    color: blue;
+}
 
 li {
     padding: 4px;
