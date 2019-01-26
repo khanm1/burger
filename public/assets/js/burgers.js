@@ -1,5 +1,5 @@
 
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
+// We wait to attach our handlers until the DOM is fully loaded.
 $(function () {
 
     //ON CLICK: AJAX call 
