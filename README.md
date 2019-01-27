@@ -1,5 +1,5 @@
 # Overview
-A Node, Express, Handlebars, and MySQL burger app that lets users input the names of burgers they'd like to eat... and then they get to devour them!
+A handlebars app where MySQL and Node.js are used for burgers that are stored in MySQL. The user enters a burger, which gets added to the database and if the burger is eaten, it's considered devoured. The user can continue to add new burgers, but cannot bring back devoured burgers.
 
 ## Technologies:
 ### Frontend:
@@ -23,7 +23,7 @@ A Node, Express, Handlebars, and MySQL burger app that lets users input the name
 * mysql
 
 ## Functionality:
-Using ORM, the app has three methods:
+Using (Object Relational Mapper)ORM, the app has three methods:
 
 1. **GET:** All entries from the MySQL database and display them to the DOM using Handlebars.
 2. **PUT:** A selected burger by clicking "Devour It", which... 
