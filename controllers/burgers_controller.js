@@ -1,6 +1,6 @@
 
+//Set up Dependencies
 //ROUTER FILE - using the keywords from ORM (ALL, INSERT, and UPDATE)
-// Functions for Routing which includes the logic for each route
 var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger");
