@@ -92,6 +92,6 @@ var orm = {
   }
 
 }
-// Export ORM
+// Export (Object Relational Mapper) ORM
 module.exports = orm;
 
