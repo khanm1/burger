@@ -5,7 +5,6 @@ var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger");
 
-//***************************************************** */
 // Get Burgers the FROM the DB to DOM
 router.get("/", (req, res) => {
     burger.all(data => {
@@ -17,7 +16,6 @@ router.get("/", (req, res) => {
     })
 });
 
-//***************************************************** */
 // Create Burger to the DB
 router.post("/api/burgers", (req, res) => {
     burger.insert([
@@ -29,7 +27,6 @@ router.post("/api/burgers", (req, res) => {
     });
 });
 
-//***************************************************** */
 // Update Burger from list to devoured
 router.put("/api/burgers/:id", (req, res) => {
     var condition = "id = " + req.params.id;
