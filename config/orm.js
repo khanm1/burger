@@ -36,11 +36,10 @@ var objToSql = (ob) => {
   return arr.toString();
 }
 
-//Object Relational Mapper (ORM)
-//The query templates to with custom names
+// Here is the Object Relational Mapper (ORM) where you write functions that takes inputs and conditions
+// and turns them into database commands like SQL.
 var orm = {
 
-  //***************************************************** */
   selectAll: (tableInput, callback) => {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, (err, result) => {
@@ -51,7 +50,7 @@ var orm = {
     });
   },
 
-  //***************************************************** */
+// objColVals would be the columns and values that we want to Insert
   insertOne: (table, cols, vals, callback) => {
     var queryString = "INSERT INTO " + table;
 
@@ -73,8 +72,7 @@ var orm = {
     });
 
   },
-
-  //***************************************************** */
+// objColVals would be the columns and values that we want to update
   updateOne: (table, objColVals, condition, callback) => {
     var queryString = "UPDATE " + table;
 
