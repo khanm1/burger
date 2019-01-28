@@ -1,5 +1,4 @@
 body { 
-    /* background-image: url('../image/burger1.jpg') ; */
 	background-position: center center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
@@ -28,7 +27,7 @@ body {
 }
 
 body {
-    font-family: 'Arial Black';
+    font-family: "Arial Black";
 }
 h2 {
     color: blue;
