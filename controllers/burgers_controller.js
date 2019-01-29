@@ -1,5 +1,5 @@
 
-//Set up Dependencies
+//Dependencies
 //ROUTER FILE - using the keywords from ORM (ALL, INSERT, and UPDATE)
 var express = require("express");
 var router = express.Router();
@@ -9,14 +9,14 @@ var burger = require("../models/burger");
 router.get("/", (req, res) => {
     burger.all(data => {
         var hbsObject = {
-            burgers: data //burger is the database and data is what is inside the db
+            burgers: data 
         };
         console.log(hbsObject);
-        res.render("index", hbsObject); //index is the name of the page and hbsObject is db object
+        res.render("index", hbsObject); 
     })
 });
 
-// Create Burger to the DB
+// Create Burger 
 router.post("/api/burgers", (req, res) => {
     burger.insert([
         "burger_name", "devoured"
