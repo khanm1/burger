@@ -28,16 +28,14 @@ A handlebars app where MySQL and Node.js are used for burgers that are stored in
 
 ## Functionality:
 Using (Object Relational Mapper)ORM, the app has three methods:
-
+1. **POST:** A new burger using the Place Order form, which allows us to create burgers 
+#### Screenshot of added Burger
+![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
+    
 1. **GET:** All entries from the MySQL database and display them to the DOM using Handlebars.
 2. **PUT:** A selected burger by clicking "Devour It", which... 
    * hits a route in Express to change its "devoured" status in the MySQL database
    * re-routes the webpage back to the index, where the burger is now in the devoured column (via Handlebars)
-3. **POST:** A new burger using the "Place Order" form, which... 
-    * Hits a route in Express to insert a new burger into the MySQL database
-    * Re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
-#### Screenshot of added Burger
-![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
 
 
 
