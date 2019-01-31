@@ -32,10 +32,10 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 #### Screenshot of added Burger
 ![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
     
-1. **GET:** All entries from the MySQL database and display them to the DOM using Handlebars.
-2. **PUT:** A selected burger by clicking "Devour It", which... 
-   * hits a route in Express to change its "devoured" status in the MySQL database
-   * re-routes the webpage back to the index, where the burger is now in the devoured column (via Handlebars)
+2. **GET:** View a list of burgers available to eat 
+
+2. **PUT:** A selected burger by clicking Devour It
+   
 
 
 
