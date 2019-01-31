@@ -36,7 +36,7 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 3. **POST:** A new burger using the "Place Order" form, which... 
     * Hits a route in Express to insert a new burger into the MySQL database
     * Re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
-#### Screenshot
+#### Screenshot of added Burger
 ![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
 
 
