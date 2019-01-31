@@ -41,5 +41,7 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 
 
 
-### Link to App
-* <strong>[Burger](https://github.com/khanm1/burger)</strong>
+### Link to Heroku
+* <strong>[Burger!](https://warm-lake-16801.herokuapp.com/)</strong>
+
+
