@@ -31,6 +31,7 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 1. **POST:** A new burger using the Place Order form, which allows us to create burgers 
 #### Screenshot of added Burger
 ![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
+#### Screenshot of added in MySQl
 ![Full Size](public/assets/image/ScreenShot_of_Added_new_Burger_added_to_MYSQL.png)
     
 2. **GET:** View a list of burgers available to eat 
