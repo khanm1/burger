@@ -33,7 +33,7 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 ![Full Size](public/assets/image/ScreenShot_of_Added_Burger.png)
 
 #### Screenshot of added Burger in MySQl
-![small Size](public/assets/image/ScreenShot_of_Added_new_Burger_added_to_MYSQL.png)
+![small Size](public/assets/image/ScreenShot_of_Burger_added_MYSQL.png)
     
 2. **GET:** View a list of burgers available to eat 
 
