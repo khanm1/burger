@@ -38,6 +38,7 @@ Using (Object Relational Mapper)ORM, the app has three methods:
 2. **GET:** View a list of burgers available to eat 
 
 2. **PUT:** A selected burger by clicking Devour It
+![small Size](public/assets/image/ScreenShotofdevovured_Burger.png)
 
 ### Link to Heroku
 * <strong>[Burger!](https://warm-lake-16801.herokuapp.com/)</strong>
